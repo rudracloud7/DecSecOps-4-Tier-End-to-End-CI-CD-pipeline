@@ -30,13 +30,13 @@ WanderLust is a simple MERN travel blog website ✈ This project is aimed to hel
 
 ### How pipeline will look after deployment:
 - <b>CI pipeline to build and push</b>
-![image](https://github.com/user-attachments/assets/20542d8b-0701-43ed-b2f8-82f8ed28d053)
+<img width="1920" height="1020" alt="Screenshot 2026-07-30 021454" src="https://github.com/user-attachments/assets/4a7048eb-9263-4ce2-be46-f8a9d73f812c" />
 
 - <b>CD pipeline to update application version</b>
-![image](https://github.com/user-attachments/assets/8fd13807-622e-45f7-af23-dcc1ba30ca5d)
+<img width="1920" height="1020" alt="Screenshot 2026-07-30 022147" src="https://github.com/user-attachments/assets/a4db7471-86e7-48a9-b647-f18ff3ee3da2" />
 
 - <b>ArgoCD application for deployment on EKS</b>
-![image](https://github.com/user-attachments/assets/1ea9d486-656e-40f1-804d-2651efb54cf6)
+<img width="1920" height="1020" alt="Screenshot 2026-07-30 022459" src="https://github.com/user-attachments/assets/a606b9b7-7689-4283-abf2-38d75dcfdaf9" />
 
 #
 > [!Important]

@@ -1,11 +1,9 @@
 # Wanderlust - Your Ultimate Travel Blog 🌍✈️
 
+<img width="1035" height="712" alt="image" src="https://github.com/user-attachments/assets/73d75643-4eca-4633-b35e-d5d8a3e08f54" />
+
+
 WanderLust is a simple MERN travel blog website ✈ This project is aimed to help people to contribute in open source, upskill in react and also master git.
-
-![Uploading wanderlust 1_16_53 AM.png…]()
-
-
-
 #
 
 # Wanderlust Mega Project End to End Implementation
@@ -13,7 +11,8 @@ WanderLust is a simple MERN travel blog website ✈ This project is aimed to hel
 ### In this demo, we will see how to deploy an end to end three tier MERN stack application on EKS cluster.
 #
 ### <mark>Project Deployment Flow:</mark>
-<img src="https://github.com/DevMadhup/Wanderlust-Mega-Project/blob/main/Assets/DevSecOps%2BGitOps.gif" />
+<img width="1625" height="968" alt="wanderlust 1_16_53 AM" src="https://github.com/user-attachments/assets/acc2572f-c15b-46d3-ad4d-ef1f60e6ca29" />
+
 
 #
 

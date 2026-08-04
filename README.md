@@ -81,33 +81,28 @@ sudo usermod -aG docker ubuntu && newgrp docker
 #
 - <b id="Jenkins">Install and configure Jenkins (Master machine)</b>
 ```bash
-sudo apt update -y
-sudo apt install fontconfig openjdk-17-jre -y
+sudo apt update
+sudo apt install fontconfig openjdk-21-jre
+java -version
 
-sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
-  https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
-  
-echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]" \
+sudo wget -O /etc/apt/keyrings/jenkins-keyring.asc \
+  https://pkg.jenkins.io/debian-stable/jenkins.io-2026.key
+echo "deb [signed-by=/etc/apt/keyrings/jenkins-keyring.asc]" \
   https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
   /etc/apt/sources.list.d/jenkins.list > /dev/null
-  
-sudo apt-get update -y
-sudo apt-get install jenkins -y
+sudo apt update
+sudo apt install jenkins
 ```
 - <b>Now, access Jenkins Master on the browser on port 8080 and configure it</b>.
 #
 - <b id="EKS">Create EKS Cluster on AWS (Master machine)</b>
   - IAM user with **access keys and secret access keys**
-  - AWSCLI should be configured (<a href="https://github.com/DevMadhup/DevOps-Tools-Installations/blob/main/AWSCLI/AWSCLI.sh">Setup AWSCLI</a>)
+  - AWSCLI should be configured
   ```bash
-  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-  sudo apt install unzip
-  unzip awscliv2.zip
-  sudo ./aws/install
-  aws configure
+  
   ```
 
-  - Install **kubectl** (Master machine)(<a href="https://github.com/DevMadhup/DevOps-Tools-Installations/blob/main/Kubectl/Kubectl.sh">Setup kubectl </a>)
+  - Install **kubectl** (Master machine)
   ```bash
   curl -o kubectl https://amazon-eks.s3.us-west-2.amazonaws.com/1.19.6/2021-01-05/bin/linux/amd64/kubectl
   chmod +x ./kubectl
